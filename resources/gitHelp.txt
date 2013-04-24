@@ -1,0 +1,17 @@
+Brand New/No Repo:
+git init
+create file
+git add
+commit
+github create repo
+git remote add git@github.com:ndimit/weatherData_BackRow.git
+
+Remote (git@github.com:ndimit/weatherData_BackRow.git) but no local
+git clone
+git add remote
+cd dir
+git checkout -b for branch
+
+Yes remote and Yes local:
+git pull
+no need to add remote
