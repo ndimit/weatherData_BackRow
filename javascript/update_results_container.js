@@ -17,7 +17,7 @@ $(function() {
   
   var weatherData = function(zip) {
 	
-    apiKey = "4a5c268c050162e3";
+    apiKey = "e2dbaf95fd927995";
     url = "http://weather-api.herokuapp.com/weather/" + apiKey + "/conditions/z/" + zip + "/";
     $.ajax({
       url: url,
