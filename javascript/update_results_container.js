@@ -1,5 +1,7 @@
 $(function() {
 
+  $('#results').html("<h1>Enter City or Zip for Current Temps</h1>");
+
   $('#weather_data').submit(function() {
     updateResultsContainer();
     return false;
@@ -22,12 +24,10 @@ $(function() {
     $.ajax({
       url: url,
       success: function(data) {
-        var jData = JSON.parse(data)
-        resetAndAddToResults(jData.current_observation.display_location.city);
-		addToResults(jData.current_observation.temp_f);
-		addToResults(jData.current_observation.feelslike_string);
-		
-		console.log(jData.current_observation.feelslike_string);
+        var jData = JSON.parse(data);
+		resetAndAddToHeader(jData.current_observation.display_location.city);
+		addToResults("Current Temperature: " + jData.current_observation.temp_f);
+		addToResults("Feels Like: " + jData.current_observation.feelslike_string);
       },
       error: function() {
         console.log("Error");
@@ -39,9 +39,12 @@ $(function() {
 	addToResults(data);
   };
   
-  var addToResults = function(data) {
+  var resetAndAddToHeader = function(data) {
+	$('#results').html("<h1>Current Results For " + data + "</h1>");
+  };
+  var addToResults = function(temp) {
     
-    $('#results').append(data + "<br />");
+	$('#results').append("<h2>" + temp + "</h2>");
   };
   
   var isNaI = function(n) {
