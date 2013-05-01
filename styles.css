@@ -1,4 +1,26 @@
-.zipcode{
+body{
+	margin: 0 auto;
+	width: 600px;
+	background-image: url('weatherBackground.jpg');
+}
+
+div#test{
+	background-color: white;
+}
+
+p#title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+form#weather_data{
+	text-align:center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#zipcode{
 	width: 50px;
 	font-size:12px;
 }
@@ -6,6 +28,8 @@
 #results{
 	width: 600px;
 	height: 600px;
+	text-align: center;
+	background-color: white;
 	border-style: solid;
 	border-width: 1px;
 	border-color: Black;

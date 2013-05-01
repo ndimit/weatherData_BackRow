@@ -3,22 +3,23 @@
   <head>
 	<link rel="stylesheet" href="styles.css" type="text/css"> 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    
-	<script src="javascript/130402.js"></script>
     <script src="javascript/update_results_container.js"></script>
 	
   </head>
   <body>
-    <p>Weather Data</p>
+  <div id="test">
+    <p id="title">Weather Data</p>
     <form id="weather_data">
-		<input id="zipcode" class="zipcode" type="text" placeholder="Zipcode" maxlength="5">
-		<br>
-		<input id="city" class="city" type="text" placeholder="City">
+		Please enter either a 
+		<input id="zipcode" type="text" placeholder="Zipcode" maxlength="5">
+	    OR
+		<input id="city" type="text" placeholder="City">
 		<input type="submit" value="Get Weather Data">
     </form>
 	<br>
     <div id="results">
-		<h1>Current Conditions</h1>
+		
+	</div>
 	</div>
   </body>
 </html>
