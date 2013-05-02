@@ -1,37 +1,87 @@
 body{
-	margin: 0 auto;
-	width: 600px;
-	background-image: url('weatherBackground.jpg');
+	margin:0auto;
+	width:600px;
+	background-image:url('weatherBackground.jpg');
 }
 
 div#test{
-	background-color: white;
+	
+	/*IE10ConsumerPreview*/
+	background-image:-ms-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*MozillaFirefox*/
+	background-image:-moz-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*Opera*/
+	background-image:-o-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*Webkit(Safari/Chrome10)*/
+	background-image:-webkit-gradient(linear,lefttop,rightbottom,color-stop(0,#E0E0E0),color-stop(1,#053BEF));
+
+	/*Webkit(Chrome11+)*/
+	background-image:-webkit-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*W3CMarkup,IE10ReleasePreview*/
+	background-image:linear-gradient(tobottomright,#E0E0E00%,#053BEF100%);
+	
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;	
+			
+	border-style:solid;
+	border-width:1px;
+	border-color:Black;
+	box-shadow:2px2px5px#333;	
+	color:white;	
+	font-family:'RockSalt',Arial;
+	text-shadow:4px4px4px#888;
 }
 
 p#title{
-	text-align: center;
-	font-weight: bold;
-	font-size: 30px;
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	text-decoration:underline;
 }
 
 form#weather_data{
 	text-align:center;
-	font-weight: bold;
-	font-size: 20px;
+	font-weight:bold;
+	font-size:20px;
 }
 
 #zipcode{
-	width: 50px;
+	width:50px;
 	font-size:12px;
 }
 
 #results{
-	width: 600px;
-	height: 600px;
-	text-align: center;
-	background-color: white;
-	border-style: solid;
-	border-width: 1px;
-	border-color: Black;
-	box-shadow: 2px 2px 5px #333;
+	width:600px;
+	height:600px;
+	text-align:center;	
+	border-style:solid;
+	border-width:1px;
+	border-color:Black;
+	box-shadow:2px2px5px#333;
+	color:white;
+	text-decoration:underline;
+	font-family:'RockSalt',Arial;
+	text-shadow:4px4px4px#888;
+	
+	/*IE10ConsumerPreview*/
+	background-image:-ms-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*MozillaFirefox*/
+	background-image:-moz-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*Opera*/
+	background-image:-o-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*Webkit(Safari/Chrome10)*/
+	background-image:-webkit-gradient(linear,lefttop,rightbottom,color-stop(0,#E0E0E0),color-stop(1,#053BEF));
+
+	/*Webkit(Chrome11+)*/
+	background-image:-webkit-linear-gradient(topleft,#E0E0E00%,#053BEF100%);
+
+	/*W3CMarkup,IE10ReleasePreview*/
+	background-image:linear-gradient(tobottomright,#E0E0E00%,#053BEF100%);
 }
